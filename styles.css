@@ -53,19 +53,21 @@ a.recipe-link:hover {
   }
 }
 
-.home-link {
-
+.home-link-gyoza,
+.home-link-cake,
+.home-link-soup {
+  font-weight: 300;
 }
 
-a.home-link {
+a.home-link-gyoza {
   color: white;
 }
 
-a.home-link:hover {
+a.home-link-gyoza:hover {
   color: gray;
 }
 
-.background-one-third {
+.background-one-third-gyoza {
   width: 27vw;
   height: 100vh;
   position: fixed;
@@ -91,8 +93,30 @@ a.home-link:hover {
   font-style: normal;
 }
 
-.gyoza-title {
+div {
+  display: flex;
+  justify-content: center;
+}
+
+.gyoza-pic,
+.cake-pic,
+.soup-pic {
+  width: 50%;
+}
+
+h1, h2, h3, h4 {
+  background-color: rgba(240, 240, 240, 0.322);
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+}
+
+.gyoza-title,
+.cake-title {
   color: white;
+}
+
+.soup-title {
+  color: black;
 }
 
 .description {
@@ -114,5 +138,72 @@ a.home-link:hover {
 
 .instructions {
   color: white;
+  line-height: 1.5;
+}
+
+.background-one-third-cake {
+  width: 27vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-image: url(images/cake-background.jpg);
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  padding-right: 0;
+}
+
+.cake-page {
+  width: 68vw;
+  height: 100%;
+  margin-left: 20px;
+  margin-right: 0;
+  padding: 0;
+  background-color: rgb(109, 125, 134);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 270;
+  font-style: normal;
+}
+
+a.home-link-cake,
+a.home-link-soup {
+  color: black;
+}
+
+a.home-link-cake:hover,
+a.home-link-soup:hover {
+  color: rgb(63, 63, 63);
+}
+
+.background-one-third-soup {
+  width: 27vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-image: url(images/soup-background.jpg);
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  padding-right: 0;
+}
+
+.soup-page {
+  width: 68vw;
+  height: 100%;
+  margin-left: 20px;
+  margin-right: 0;
+  padding: 0;
+  background-color: rgb(196, 135, 4);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 270;
+  font-style: normal;
+}
+
+.lentil {
+  color: black;
   line-height: 1.5;
 }
